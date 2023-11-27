@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+button:focus,
+[role="menuitem"]:focus,
+[role="menuitem"]:hover{
+    border: 1px solid #005BD3;
+    border-radius: 5px;
+}
+
+.learn-more{
+    color: #005BD3;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    flex-shrink: 0;
+    background: hsl(0, 0%, 10%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+}
+.nav-search{
+    border-radius: 8px;
+    border: 1px solid #616161;
+    background: #303030;
+    height: 32px;
+    padding-left: 1em;
+    position: relative;
+    &:focus,
+    &:hover
+     {
+            border: 1px solid #fff;
+        }
+}
+   .nav-search input{
+        border: 0;
+        outline: 0;
+        height: 28px;
+        background: #303030;
+        width: 80%;
+       margin-left: 2em;
+       &:focus{
+        color: #fff;
+       }
+    }
+   .nav-search label{
+    color: #b5b5b5;
+    position: absolute;
+    left: 0.5em;
+    top: 0.3em;
+   }
+    .nav-search input:focus+label {
+        display: none
+    }
+.bg-logo{
+    display: none
+}
+.mob-logo{
+    height: 32px;
+}
+.not-prof{
+    display: flex;
+    height: 32px;
+    gap: 8px;
+    position: relative;
+}
+.notf-btn{
+    background:inherit;
+    border: none;
+    display: flex;
+    padding: 6px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.notif-drop{
+    display: flex;
+    width: 358px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    border-radius: 14px;
+    border: 1px solid #DBDBDB;
+    background: #FFF;
+    position: absolute;
+    top: 3em;
+    right: -0.3em;
+    /* Drop Shadow */
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+}
+.alert-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    div{
+        display: flex;
+        gap: 5px;
+    }
+}
+.notdrop-dets{
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    background: #F1F1F1;
+    border: 0;
+  &:hover,
+  &:focus{
+    border: 1px solid blue;
+  }
+}
+    svg{
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    }
+
+.user-profile{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.f-profile{
+    display: none;
+}
+.nb-green{
+    border-radius: 6px;
+    background: #36FBA1;
+    padding: 9px 5px;
+}
+.profile-drop{
+    display: flex;
+    width: 320px;
+    padding: 6px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    border-radius: 14px;
+    border: 1px solid #DBDBDB;
+    background:#FFF;
+    position: absolute;
+    top: 3em;
+    right: -0.4em;
+    /* Drop Shadow */
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+}
+menu li{
+    list-style-type: none;
+    width: 310px;
+    padding: 0.5em;
+    color: var #303030;
+    
+        /* Text-13/medium */
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        /* 18.2px */
+    &:active,
+        &:focus,    
+    &:hover{
+        border: 1px solid blue;
+    }
+
+   
+}
+[role="menuitem"] button {
+     width: 310px;
+     padding: 0.5em;
+     border: 0;
+    background: #fff;
+    text-align: left;
+     display: flex;
+     align-items: center;
+     gap: 10px;
+ }
+ .user-btn{
+    border: 0;
+    background: inherit;
+    margin-left: 1em;
+    text-align: left;
+ }
+.dd-gr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:310px;
+    padding: 0.5em;
+    border-radius: 14px 14px 0 0;
+    border: 0;
+    margin: 0 auto;
+}
+.sm-liitem{
+    color:  #616161;
+    
+        /* Text-12/regular */
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        /* 15.6px */
+}
+.flex-rw{
+    display: flex;
+    align-items: center;
+    
+}
+.blk-bg{
+    margin: 2em 0;
+    color:#E3E3E3;
+    
+        /* Text-13/medium */
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        /* 18.2px */
+        display: flex;
+        padding: 12px 8px 12px 16px;
+        align-items: flex-start;
+        gap: 16px;
+        align-self: stretch;
+        background: #1A1A1A;
+}
+.frs-bg-blk{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+.btn-white{
+    padding: 0.4em;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    box-shadow: 0px -1px 0px 0px #B5B5B5 inset;
+}
+.open-sect{
+    text-align: left;
+    padding: 1em;
+    /* display: flex; */
+    justify-content: space-between;
+    color: #303030;
+    background: #fff;
+    border-radius: 18px;
+    border: 1px solid #DBDBDB;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.05);
+}
+    .open-sect:active,
+    .open-sect:hover,
+    .open-sect:visited
+    {
+    background: #fff;
+    }
+    .completed{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 1em;
+    }
+    .countTicks{
+        color: #303030;
+    
+        /* Text-12/regular */
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        /* 15.6px */
+    }
+     #complete-progress::-webkit-progress-inner-element {
+            background-color: #000;
+        &::-webkit-progress-value {
+        background-color: #000
+    }
+}
+        progress {
+            border-radius: 7px;
+            height: 4px;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        progress::-webkit-progress-bar {
+            background-color: #b5b5b5;
+            border-radius: 20px;
+            border: 0;
+        }
+
+        progress::-webkit-progress-value {
+            background-color: #000;
+            border-radius: 20px;
+            border: 0;
+        }
+            
+                    
+    .top-dets{
+        display: flex;
+        justify-content: space-between;
+    }
+.sect-details{
+    display: none;
+    margin-top: 1em;
+}
+.arrow{
+    color: black;
+    cursor: pointer;
+    border: 0;
+    background: inherit;
+    &:focus{
+        border: 0
+    }
+}
+.choice{
+    border-radius: 10px;
+    background: #F3F3F3;
+    margin: 0.5em auto;
+}
+.accordion {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+
+@keyframes rotateSvg {
+    from {
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg)
+    }
+}
+.accordion svg{
+    margin-right: 0.5em;
+}
+.svgrotate{
+    color: black;
+    animation: rotateSvg 1s infinite;
+}
+.action-btn{
+    color: #F6F3F6;
+    width: 116px;
+    height: 28px;
+    margin: 1em 0;
+    /* Text-12/Semi bold */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    /* 15.6px */
+    border-radius: 6px;
+    border: 1.5px solid rgba(255, 255, 255, 0.20);
+    border-bottom: 0;
+    background: #404040;
+    box-shadow: 0px 0px 0px 1.5px #333, 0px 1px 0px 1.5px #333, 0px 2px 0px 0px #000;
+    &:clicked{
+        border: 1px solid #0053DD;
+    }
+    &:hover{
+        border: 1px solid #0053DD;
+    }
+}
+.impt-btn{
+    color: var(--font-dark, #323232);
+    
+        /* Text-12/Semi bold */
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%;
+        margin-left: 3em;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* .active {
+    background-color: #fff;
+} */
+.active{
+    color: #303030;
+    border-radius: 10px;
+        background: #F3F3F3;
+        /* Text-13/semi bold */
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        /* 18.2px */
+}
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    background-color: #f3f3f3;
+/* Text-13/medium */
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    padding: 0 18px;
+
+    display: none;
+    gap: 5em;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+    transition: display ease 5s;
+}
+.lg-img{
+    display: none
+}
+.hidden{
+    display: none
+}
+@media screen and (min-width: 1100px){
+.mob-logo{
+    display: none
+}
+.bg-logo{
+    display: block
+}
+.nav-search{
+    width: 480px;
+}
+.f-profile{ 
+    display: block;
+    color:#fff;
+    padding: 0.5em;
+    &:hover{
+        background: #616161;
+        border-radius: 8px 0 0 8px;
+    }
+         &:focus{
+                background: #616161;
+                border-radius: 8px 0 0 8px;
+            }
+         &:clicked{
+                background: #616161;
+                border-radius: 8px 0 0 8px;
+            }
+}
+.notf-btn {
+    background: #303030;
+    &:hover{
+        border: 1px solid #616161;
+    }
+}
+.notf-btn:hover{
+    background: #616161
+}
+.notif-drop{
+    right: 1em;
+}
+.details{
+    display: flex;
+    width: 800px;
+    padding: 8px;
+    flex-direction: column;
+    gap: 16px;
+    margin: 1em auto;
+    margin-top: 0;
+}
+.frs-bg-blk {
+    flex-direction: row;
+    width: 95%;
+}
+.lg-img{
+    display: block
+}
+}
