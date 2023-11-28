@@ -88,12 +88,13 @@ for (i = 0; i < acc.length; i++) {
     }
     
     
-    openPanel()
+    openPanel(panel)
 
   });
 }
 
-function openPanel(){
+
+function openPanel(panel){
   if (panel.style.display === "flex") {
     panel.style.display = "none";
   } else {
@@ -101,6 +102,8 @@ function openPanel(){
 
   }
 }
+
+
 // profile opener
 
 function openNav(){
@@ -149,3 +152,11 @@ main.addEventListener("click", ()=>{
 notification.addEventListener("click", openNotification)
 
 profile.addEventListener("click", openNav)
+
+function pressEscape(event) {
+  if(event.key === "Escape" && !profiledropdown.classList.contains("hidden")){
+    profiledropdown.classList.add("hidden")
+    profile.focus()
+}
+}
+profile.addEventListener("keyup", pressEscape)
