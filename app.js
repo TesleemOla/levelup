@@ -160,3 +160,16 @@ function pressEscape(event) {
 }
 }
 profile.addEventListener("keyup", pressEscape)
+
+
+// close the top banner
+const closebannersvg = document.querySelector(".closebanner")
+
+closebannersvg.addEventListener("click", closebanner)
+function closebanner(){
+  
+  const banner = document.querySelector(".blk-bg")
+
+  banner.classList.add("hidden")
+}
+
